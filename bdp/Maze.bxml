@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='Maze' type='abstraction' position='true' semantic='true' b0check='false'>
+<Concrete_Constants>
+<Attr>
+<Pos l='9' c='1' s='18'/>
+</Attr>
+<Id value='x_axis_range_of_maze' typref='2'>
+<Attr>
+<Pos l='10' c='5' s='20'/>
+</Attr>
+</Id>
+<Id value='y_axis_range_of_maze' typref='2'>
+<Attr>
+<Pos l='10' c='27' s='20'/>
+</Attr>
+</Id>
+<Id value='maze_area' typref='4'>
+<Attr>
+<Pos l='10' c='49' s='9'/>
+</Attr>
+</Id>
+<Id value='internal_walls_of_maze' typref='4'>
+<Attr>
+<Pos l='10' c='60' s='22'/>
+</Attr>
+</Id>
+<Id value='free_square_of_maze' typref='4'>
+<Attr>
+<Pos l='10' c='84' s='19'/>
+</Attr>
+</Id>
+<Id value='initial_square_of_maze' typref='5'>
+<Attr>
+<Pos l='10' c='105' s='22'/>
+</Attr>
+</Id>
+<Id value='exit_square_of_maze' typref='5'>
+<Attr>
+<Pos l='10' c='129' s='19'/>
+</Attr>
+</Id>
+</Concrete_Constants>
+<Properties>
+<Attr>
+<Pos l='12' c='1' s='10'/>
+</Attr>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='15' c='26' s='1'/>
+</Attr>
+<Id value='x_axis_range_of_maze' typref='2'>
+<Attr>
+<Pos l='15' c='5' s='20'/>
+</Attr>
+</Id>
+<Binary_Exp op='..' typref='2'>
+<Attr>
+<Pos l='15' c='29' s='2'/>
+</Attr>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='15' c='28' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='7' typref='1'>
+<Attr>
+<Pos l='15' c='31' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='16' c='26' s='1'/>
+</Attr>
+<Id value='y_axis_range_of_maze' typref='2'>
+<Attr>
+<Pos l='16' c='5' s='20'/>
+</Attr>
+</Id>
+<Binary_Exp op='..' typref='2'>
+<Attr>
+<Pos l='16' c='29' s='2'/>
+</Attr>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='16' c='28' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='5' typref='1'>
+<Attr>
+<Pos l='16' c='31' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='17' c='15' s='1'/>
+</Attr>
+<Id value='maze_area' typref='4'>
+<Attr>
+<Pos l='17' c='5' s='9'/>
+</Attr>
+</Id>
+<Binary_Exp op='*s' typref='4'>
+<Attr>
+<Pos l='17' c='38' s='1'/>
+</Attr>
+<Id value='x_axis_range_of_maze' typref='2'>
+<Attr>
+<Pos l='17' c='17' s='20'/>
+</Attr>
+</Id>
+<Id value='y_axis_range_of_maze' typref='2'>
+<Attr>
+<Pos l='17' c='40' s='20'/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='20' c='28' s='2'/>
+</Attr>
+<Id value='internal_walls_of_maze' typref='4'>
+<Attr>
+<Pos l='20' c='5' s='22'/>
+</Attr>
+</Id>
+<Id value='maze_area' typref='4'>
+<Attr>
+<Pos l='20' c='31' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='22' c='28' s='1'/>
+</Attr>
+<Id value='internal_walls_of_maze' typref='4'>
+<Attr>
+<Pos l='22' c='5' s='22'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='4'>
+<Attr>
+<Pos l='22' c='30' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='34' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='22' c='32' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='3' typref='1'>
+<Attr>
+<Pos l='22' c='38' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='45' s='3'/>
+</Attr>
+<Integer_Literal value='2' typref='1'>
+<Attr>
+<Pos l='22' c='43' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='22' c='49' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='56' s='3'/>
+</Attr>
+<Integer_Literal value='2' typref='1'>
+<Attr>
+<Pos l='22' c='54' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='3' typref='1'>
+<Attr>
+<Pos l='22' c='60' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='67' s='3'/>
+</Attr>
+<Integer_Literal value='2' typref='1'>
+<Attr>
+<Pos l='22' c='65' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='5' typref='1'>
+<Attr>
+<Pos l='22' c='71' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='78' s='3'/>
+</Attr>
+<Integer_Literal value='3' typref='1'>
+<Attr>
+<Pos l='22' c='76' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='3' typref='1'>
+<Attr>
+<Pos l='22' c='82' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='89' s='3'/>
+</Attr>
+<Integer_Literal value='4' typref='1'>
+<Attr>
+<Pos l='22' c='87' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='2' typref='1'>
+<Attr>
+<Pos l='22' c='93' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='100' s='3'/>
+</Attr>
+<Integer_Literal value='4' typref='1'>
+<Attr>
+<Pos l='22' c='98' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='3' typref='1'>
+<Attr>
+<Pos l='22' c='104' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='111' s='3'/>
+</Attr>
+<Integer_Literal value='4' typref='1'>
+<Attr>
+<Pos l='22' c='109' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='4' typref='1'>
+<Attr>
+<Pos l='22' c='115' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='122' s='3'/>
+</Attr>
+<Integer_Literal value='6' typref='1'>
+<Attr>
+<Pos l='22' c='120' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='22' c='126' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='133' s='3'/>
+</Attr>
+<Integer_Literal value='6' typref='1'>
+<Attr>
+<Pos l='22' c='131' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='2' typref='1'>
+<Attr>
+<Pos l='22' c='137' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='144' s='3'/>
+</Attr>
+<Integer_Literal value='6' typref='1'>
+<Attr>
+<Pos l='22' c='142' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='4' typref='1'>
+<Attr>
+<Pos l='22' c='148' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='22' c='155' s='3'/>
+</Attr>
+<Integer_Literal value='7' typref='1'>
+<Attr>
+<Pos l='22' c='153' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='4' typref='1'>
+<Attr>
+<Pos l='22' c='159' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='25' c='25' s='2'/>
+</Attr>
+<Id value='free_square_of_maze' typref='4'>
+<Attr>
+<Pos l='25' c='5' s='19'/>
+</Attr>
+</Id>
+<Id value='maze_area' typref='4'>
+<Attr>
+<Pos l='25' c='28' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='26' c='51' s='1'/>
+</Attr>
+<Binary_Exp op='/\' typref='4'>
+<Attr>
+<Pos l='26' c='25' s='2'/>
+</Attr>
+<Id value='free_square_of_maze' typref='4'>
+<Attr>
+<Pos l='26' c='5' s='19'/>
+</Attr>
+</Id>
+<Id value='internal_walls_of_maze' typref='4'>
+<Attr>
+<Pos l='26' c='28' s='22'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<EmptySet typref='4'>
+<Attr>
+<Pos l='26' c='53' s='2'/>
+</Attr>
+</EmptySet>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='27' c='51' s='1'/>
+</Attr>
+<Binary_Exp op='\/' typref='4'>
+<Attr>
+<Pos l='27' c='25' s='2'/>
+</Attr>
+<Id value='free_square_of_maze' typref='4'>
+<Attr>
+<Pos l='27' c='5' s='19'/>
+</Attr>
+</Id>
+<Id value='internal_walls_of_maze' typref='4'>
+<Attr>
+<Pos l='27' c='28' s='22'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id value='maze_area' typref='4'>
+<Attr>
+<Pos l='27' c='53' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='30' c='28' s='1'/>
+</Attr>
+<Id value='initial_square_of_maze' typref='5'>
+<Attr>
+<Pos l='30' c='5' s='22'/>
+</Attr>
+</Id>
+<Id value='free_square_of_maze' typref='4'>
+<Attr>
+<Pos l='30' c='30' s='19'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='31' c='28' s='1'/>
+</Attr>
+<Id value='initial_square_of_maze' typref='5'>
+<Attr>
+<Pos l='31' c='5' s='22'/>
+</Attr>
+</Id>
+<Id value='maze_area' typref='4'>
+<Attr>
+<Pos l='31' c='30' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='32' c='28' s='1'/>
+</Attr>
+<Id value='initial_square_of_maze' typref='5'>
+<Attr>
+<Pos l='32' c='5' s='22'/>
+</Attr>
+</Id>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='32' c='31' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='32' c='30' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='32' c='34' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='34' c='25' s='1'/>
+</Attr>
+<Id value='exit_square_of_maze' typref='5'>
+<Attr>
+<Pos l='34' c='5' s='19'/>
+</Attr>
+</Id>
+<Id value='free_square_of_maze' typref='4'>
+<Attr>
+<Pos l='34' c='27' s='19'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='35' c='25' s='1'/>
+</Attr>
+<Id value='exit_square_of_maze' typref='5'>
+<Attr>
+<Pos l='35' c='5' s='19'/>
+</Attr>
+</Id>
+<Id value='maze_area' typref='4'>
+<Attr>
+<Pos l='35' c='27' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='36' c='25' s='1'/>
+</Attr>
+<Id value='exit_square_of_maze' typref='5'>
+<Attr>
+<Pos l='36' c='5' s='19'/>
+</Attr>
+</Id>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='36' c='28' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='36' c='27' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='5' typref='1'>
+<Attr>
+<Pos l='36' c='31' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Properties>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos>
+<Type id='0'>
+<Id value='BOOL'/>
+</Type>
+<Type id='1'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='2'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+<Type id='3'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='4'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='5'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>
